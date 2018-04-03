@@ -42,6 +42,7 @@
 
     $('#register-operator').on('hidden.bs.modal', function () {
         $operatorForm.find('.alert').addClass('hidden');
+        $operatorForm.trigger('reset');
     });
 
     $.get('/operador', fetchOperators);
